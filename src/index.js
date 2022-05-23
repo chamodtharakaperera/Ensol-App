@@ -7,6 +7,7 @@ import App from "./App"
 import Login from './components/login';
 import Dashboard from './components/dashboard';
 import Orders from './components/orders';
+import AddData from './components/AddData';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -15,7 +16,7 @@ ReactDOM.render(
       <Routes>
         <Route exact path="/" element={<Login />} />
 
-        <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route exact path="/dashboard" element={<AddData />} />
 
         <Route path="/orders/:id" element={<Orders/>}/>
         
