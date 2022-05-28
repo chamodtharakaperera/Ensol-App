@@ -133,15 +133,15 @@ class Repairs extends Component {
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail3">Repair Status</label>
-                      <input type="text" class="form-control" placeholder="Order status" value={this.state.status}/>
+                      <input type="text" class="form-control" placeholder="Repair status" value={this.state.status}/>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword4">Username</label>
-                      <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Username" value={this.state.username}/>
+                      <label for="exampleInputPassword4">Customer Name</label>
+                      <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Customer Name" value={this.state.username}/>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword4">User address</label>
-                      <input type="text" class="form-control" id="exampleInputPassword4" placeholder="User address" value={this.state.address}/>
+                      <label for="exampleInputPassword4">Customer address</label>
+                      <input type="text" class="form-control" id="exampleInputPassword4" placeholder="Customer address" value={this.state.address}/>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword4">Telephone number</label>
@@ -155,7 +155,8 @@ class Repairs extends Component {
                         <select class="form-control" id="statusDropDown" onChange={this.onChangeHandler}>
                           <option id="0">Cancelled</option>
                           <option id="1">Completed</option>
-                          <option id="2">Ongoing</option>
+                          <option id="2">Accepted</option>
+                          <option id="3">Pending</option>
                         </select>
                       </div>
                       <button type="submit" class="btn btn-warning me-2" onClick={this.submitHandler}>Update</button>
